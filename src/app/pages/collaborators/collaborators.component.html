@@ -1,0 +1,47 @@
+<div class="table-container">
+  <div class="table-content">
+    <div class="list-header">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search Collaborator"
+          aria-label="Search"
+        />
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+
+      <button
+        type="button"
+        (click)="openModalWithComponent()"
+      >
+        <strong>Add Collaborator <span>+</span></strong>
+      </button>
+    </div>
+
+    <table class="table caption-top table-hover">
+      <caption>
+        List of Collaborators
+      </caption>
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Job Function</th>
+          <th scope="col">Status</th>
+          <th scope="col">Manage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let collaborator of collaborators$ | async; let i=index">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ collaborator }}</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </div>
+</div>
