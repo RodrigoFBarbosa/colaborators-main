@@ -35,6 +35,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ProjRegistrationComponent } from './pages/projects/proj-registration/proj-registration.component';
 
 
 
@@ -55,6 +56,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     ProjectsComponent,
     DashComponent,
     ColRegistrationComponent,
+    ProjRegistrationComponent,
   ],
   imports: [
     BrowserModule,
