@@ -2,7 +2,7 @@
   <h4 class="modal-title pull-left">
     <strong>Project Registration Form</strong>
   </h4>
-  <button type="button" class="btn-close close pull-right" aria-label="Close">
+  <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="BsModalRef.hide()">
     <span aria-hidden="true" class="visually-hidden">&times;</span>
   </button>
 </div>
@@ -10,12 +10,28 @@
   <form class="row g-3">
     <div class="col-md-6">
       <label for="inputFirstName4" class="form-label">Project Name*</label>
-      <input
-        type="text"
+      <input type="text" class="form-control" id="inputFirstName4" />
+    </div>
+    <div class="col-3">
+      <label for="StartDate" class="form-label">Start Date*</label>
+      <input type="date" class="form-control" id="StartDate" />
+    </div>
+    <div class="col-3">
+      <label for="EndDate" class="form-label">End Date*</label>
+      <input type="date" class="form-control" id="EndDate" />
+    </div>
+    <div class="col-3">
+      <label for="HoursPerWeek" class="form-label">Hours Per Week*</label>
+      <input type="text" class="form-control" id="HoursPerWeek" />
+    </div>
+    <div class="form">
+      <label for="Observations" class="form-label">Observations</label>
+      <textarea
         class="form-control"
-        id="inputFirstName4"
-        formControlName="firstName"
-      />
+        placeholder="Leave a observation here"
+        id="floatingTextarea2"
+        style="height: 100px"
+      ></textarea>
     </div>
   </form>
 </div>
