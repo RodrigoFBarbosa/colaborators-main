@@ -1,10 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     padding: 10vh;
 }
 
-.container {
+.container-main {
     display: flex;
-    gap: 15vh;
+    gap: 5vh;
     min-height: 70vh;
 }
 

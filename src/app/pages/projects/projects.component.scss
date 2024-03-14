@@ -81,7 +81,9 @@ button:hover {
     cursor: pointer;
 }
 
-
+.card:hover {
+    background-color: var(--hover-primary);
+}
 
 
 
